@@ -1,6 +1,4 @@
 # help_desk
-fdsfds
-Notes:
 
 # Comment 1
 It can be seen that within Shared Views there is the _Layout.cshtml.css which is the css file to be desplayed when running the application. 
