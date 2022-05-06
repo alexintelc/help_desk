@@ -13,16 +13,6 @@ public class TestController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
     public IActionResult Test()
     {
         return View();

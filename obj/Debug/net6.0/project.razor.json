@@ -16328,8 +16328,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/alexpages/repos/help_desk/Views/Home/Test.cshtml",
-      "TargetPath": "Views\\Home\\Test.cshtml",
+      "FilePath": "/Users/alexpages/repos/help_desk/Views/Test/Test.cshtml",
+      "TargetPath": "Views\\Test\\Test.cshtml",
       "FileKind": "mvc"
     },
     {

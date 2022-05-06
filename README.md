@@ -8,6 +8,5 @@ It appears in the _ViewStart.cshtml, which sets a default css to be displayed wh
 first, and after it renders the correspondent view.
 
 # Comment 2
-
 The launchSettings.json within the Properties folders, sets which port of the localhost will be used.
 
