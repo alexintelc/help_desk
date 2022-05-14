@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+//SQLite and SQL Server for DataBase Connection:
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

@@ -1,54 +1,41 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
+
 namespace help_desk.Models;
 
 public class Ticket
 {
-    public string? RequestId;
-    private int creationDate;
-    private int dueDate;
-    private string? creatorUser;
-    private string? description;
-    private string? status;
+    public int Id { get; set; }
+    public string? Name { get; set; }
 
-//Setters
-private void setRequestId(string requestid){
-    this.RequestId = requestid;
-}
-private void setCreationDate(int creationDate){
-    this.creationDate = creationDate;
-}
-private void setDueDate(int dueDate){
-    this.dueDate = dueDate;
-}
-private void setCreatorUser(string creatorUser){
-    this.creatorUser = creatorUser;
-}
-private void setDescription(string description){
-    this.description = description;
-}
-private void setStatus(string status){
-    this.status = status;
-}
+    [DataType(DataType.Date)]
+    public DateTime CreationDate { get; set; }
 
-//Getters
-public string getRequestId(string requestid){
-    return this.RequestId;
-}
-public int getCreationDate(int creationDate){
-    return this.creationDate;
-}
-public int getDueDate(int dueDate){
-    return this.dueDate;
-}
-public string getCreatorUser(string creatorUser){
-    return this.creatorUser;
-}
-public string getDescription(string description){
-    return this.description;
-}
-public string getStatus(string status){
-   return this.status;
-}
+    public string? Description { get; set; }
 
+    //Test of a ticket
+    public Ticket(){
+       this.Id = 1;
+       this.Name = "Ticket 1";
+       this.CreationDate = DateTime.Now;
+       this.Description=("brief description");
+   }
+    //Constructor
+    public Ticket(int id, string name, DateTime creationDate, string description)
+    {
+        Id = id;
+        Name = name;
+        CreationDate = creationDate;
+        Description = description;
+    }
 
+    //Related to DataBase conneciton and to be able to write/read things
+    public class TicketDBContext : DbContext
+    {
+        public DbSet<Ticket> Ticket { get; set; }
+    }
+    
+    
 
-}
+}   
+

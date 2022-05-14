@@ -16298,6 +16298,11 @@
   "RootNamespace": "help_desk",
   "Documents": [
     {
+      "FilePath": "/Users/alexpages/repos/help_desk/Views/Ticket/Ticket.cshtml",
+      "TargetPath": "Views\\Ticket\\Ticket.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alexpages/repos/help_desk/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

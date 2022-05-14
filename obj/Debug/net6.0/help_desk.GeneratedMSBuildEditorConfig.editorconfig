@@ -35,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVzdC9UZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/alexpages/repos/help_desk/Views/Ticket/Ticket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlja2V0L1RpY2tldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alexpages/repos/help_desk/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
