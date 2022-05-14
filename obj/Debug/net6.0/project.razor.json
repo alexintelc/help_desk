@@ -16298,6 +16298,11 @@
   "RootNamespace": "help_desk",
   "Documents": [
     {
+      "FilePath": "/Users/alexpages/repos/help_desk/Views/Ticket/Index.cshtml",
+      "TargetPath": "Views\\Ticket\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alexpages/repos/help_desk/Views/Ticket/Ticket.cshtml",
       "TargetPath": "Views\\Ticket\\Ticket.cshtml",
       "FileKind": "mvc"
@@ -16305,6 +16310,11 @@
     {
       "FilePath": "/Users/alexpages/repos/help_desk/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alexpages/repos/help_desk/Views/Ticket/Delete.cshtml",
+      "TargetPath": "Views\\Ticket\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16323,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/alexpages/repos/help_desk/Views/Ticket/Create.cshtml",
+      "TargetPath": "Views\\Ticket\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alexpages/repos/help_desk/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -16333,8 +16348,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/alexpages/repos/help_desk/Views/Ticket/Edit.cshtml",
+      "TargetPath": "Views\\Ticket\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/alexpages/repos/help_desk/Views/Test/Test.cshtml",
       "TargetPath": "Views\\Test\\Test.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/alexpages/repos/help_desk/Views/Ticket/Details.cshtml",
+      "TargetPath": "Views\\Ticket\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
