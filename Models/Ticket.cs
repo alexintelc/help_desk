@@ -11,6 +11,5 @@ public class Ticket
     public DateTime CreationDate { get; set; }
     public string? Description { get; set; }
    
-
 }   
 

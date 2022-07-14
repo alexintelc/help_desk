@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+
+using help_desk.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<HelpDeskContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("HelpDeskContext") ?? throw new InvalidOperationException("Connection string 'HelpDeskContext' not found.")));
@@ -19,6 +22,13 @@ else
 }
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
