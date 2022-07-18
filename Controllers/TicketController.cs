@@ -19,9 +19,14 @@ namespace help_desk.Controllers
         }
 
         // GET: Ticket
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-              return View(await _context.Ticket.ToListAsync());
+            var tickets = from m in _context.Ticket
+                select m;
+            if (!String.IsNullOrEmpty(searchString)){
+                tickets = tickets.Where(s => s.Name!.Contains(searchString));
+            }
+              return View(await tickets.ToListAsync());
         }
 
         // GET: Ticket/Details/5
@@ -53,7 +58,7 @@ namespace help_desk.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,CreationDate,Description")] Ticket ticket)
+        public async Task<IActionResult> Create([Bind("Id,Name,Category,CreationDate,Description")] Ticket ticket)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +90,7 @@ namespace help_desk.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CreationDate,Description")] Ticket ticket)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Category,CreationDate,Description")] Ticket ticket)
         {
             if (id != ticket.Id)
             {
