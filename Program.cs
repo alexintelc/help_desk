@@ -23,10 +23,17 @@ else
 
 var app = builder.Build();
 
+
+// Data Base Initializer
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<HelpDeskContext>();
+    //Creates a new empty DB
+    context.Database.EnsureCreated();
 
+    //DB is filled with SeedData. Whenever the DB needs to be updated with new fields
+    //just write on terminal dotnet ef database drop, and rerun the program
     SeedData.Initialize(services);
 }
 

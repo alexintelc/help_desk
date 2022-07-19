@@ -7,12 +7,15 @@ namespace help_desk.Models;
 public class Ticket
 {
     public int Id { get; set; }
-    public string? Name { get; set; }
+    [StringLength(60, MinimumLength = 3), Required]
+    public string? Subject { get; set; }
     public string? Category { get; set; }
-    [Display(Name = "Creation Date")]
-    [DataType(DataType.Date)]
+    [Display(Name = "Creation Date"), DataType(DataType.Date)]
     public DateTime CreationDate { get; set; }
+    [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$"), Required, StringLength(60, MinimumLength = 10)]
     public string? Description { get; set; }
-   
+    [Required]
+    public string? Priority { get; set; }
+
 }   
 
