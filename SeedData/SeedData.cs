@@ -24,38 +24,38 @@ namespace help_desk.Models
                     {
                         Id = 001,
                         Subject = "Ticket 1",
-                        Category = "Incident",
+                        Category = Category.Change,
                         CreationDate = DateTime.Parse("1989-2-12"),
                         Description = "Description ticket 1",
-                        Priority = "High",
+                        Priority = Priority.High,
                     },                   
                     new Ticket
                     {
                         Id = 002,
                         Subject = "Ticket 2",
-                        Category = "Change",
+                        Category = Category.Change,
                         CreationDate = DateTime.Parse("1989-2-12"),
                         Description = "Description lorem whatever xd ",
-                        Priority = "High",
+                        Priority = Priority.High,
                     },       
                     new Ticket
                     {
                         Id = 003,
                         Subject = "Ticket 3",
-                        Category = "Incident",
+                        Category = Category.Change,
                         CreationDate = DateTime.Parse("1989-2-12"),
                         Description = "It seems as I am having issues with adding variables",
-                        Priority = "High",
+                        Priority = Priority.High,
 
                     },
                     new Ticket
                     {
                         Id = 004,
                         Subject = "Ticket 4",
-                        Category = "Incident",
+                        Category = Category.Change,
                         CreationDate = DateTime.Parse("1989-2-12"),
                         Description = "I am trying to add new variables to an existing ticket model",
-                        Priority = "High",
+                        Priority = Priority.High,
 
                     }
                 );
