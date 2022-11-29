@@ -7,7 +7,7 @@ This is project was done with the intention to understand the following:
   - Get familiarized with ASP.NET core and refresh C# sintaxis.
   - Understand Scaffolding, CRUD, routing/mapping, relation to the Views with actual HTML and CSS as a front end.
   - Understand data base management with Entity Framework since EF Core is intended to be used with .NET Core applications.
-  - Add aditional
+  - Add aditional features.
   - Understand ObjectMapper and what it implies (such as: Creation of classes, creating an object that uses previously defined classes, use the object to retrieve data, etc.).
  
 ## How to Install and Run the Project
